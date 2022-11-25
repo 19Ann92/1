@@ -3,19 +3,18 @@
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
 
-//Console.Write("Введите первое число: ");
-//int N = Convert.ToInt32(Console.ReadLine());
-int i = 0;
-int[] array = {1, 2, 3, 4, 5};
-int Langht = array.Length;
-int index = 0;
+Console.Write("Введите первое число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int i = 1;
+//int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9 ,10};
+//int Langht = array.Length;
+//int index = 0;
 
-while (index < Langht)
+while (i <= N)
 {
-    if (array[index] % 2 == 0)
-        i = array[index];
-        Console.Write(i);
-    index++;
+    if (i % 2 == 0)
+        Console.Write(i + ", ");
+    i++;    
 }
 
 
