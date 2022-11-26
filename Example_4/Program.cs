@@ -5,16 +5,14 @@
 
 Console.Write("Введите первое число: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int i = 1;
-//int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9 ,10};
-//int Langht = array.Length;
-//int index = 0;
+int[] array = Enumerable.Range(1, N).ToArray();
+int Langht = array.Length;
+int index = 0;
 
-while (i <= N)
+while (index < Langht)
 {
-    if (i % 2 == 0)
-        Console.Write(i + ", ");
-    i++;    
+    if (array[index] % 2 == 0)
+        Console.Write(array[index] + " ");
+    index++;
+    
 }
-
-
