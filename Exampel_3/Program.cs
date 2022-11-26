@@ -5,7 +5,7 @@
 //7 -> нет
 
 Console.Write("Введите первое число: ");
-int num = int.Parse(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(num % 2 == 0 ? $"Число {num} четное." 
 : $"Число {num} не четное.");
